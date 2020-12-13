@@ -1,3 +1,6 @@
 .idea/
 out/
+out/production/Kotlin-Rudiment/
 *.iml
+*.xml
+*.name
