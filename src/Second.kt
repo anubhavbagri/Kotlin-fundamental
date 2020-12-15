@@ -91,5 +91,46 @@ fun main(){
         print(" $a")
         a-=2
     }while (a>-10);
+    /* Few keywords: https://kotlinlang.org/docs/reference/keyword-reference.html
+        as- casts variables into specific type
+        Any- variable assigned, can be of any type
+        as? - variable can be even null
+        fun- declares a function
+        in- used in FOR loop to setup ranges
+        is- checks whether particular variable is of that specific datatype or not
+     */
+    val xyz: Any = "anubhav"
+    val Strxyz: String = xyz as String
+    if(xyz is String){
+        print("\n ${xyz.length}")
+    }
+    /*
+    when()- replacement for switch case, checks the value of particular variable & match with the particular case
+     */
+    when(xyz){
+        "ayush"->{
+            print("\nName1")
+        }
+        "anubhav"->{
+            print("\nName2")
+        }
+        "vijay"->{
+            print("\nName3")
+        }
+        else->{
+            print("\nNo match")
+        }
+    }
+    val output = when(xyz){
+        "ayush"->"1"
+        "anubhav"->"2"
+        "vijay"->"3"
+        else->"invalid name"
+    }
+    print("\n $output")
+    /*
+    functions
+     */
+    
 }
 
