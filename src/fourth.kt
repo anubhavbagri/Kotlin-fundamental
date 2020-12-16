@@ -2,7 +2,7 @@
 Classes are blueprint of the object which have common properties
  */
 fun main(){
-    //to create an object of the class User by calling its constructor
+    //to create an object of the class User
     val u: User = User()
     u.email
 }
