@@ -1,8 +1,6 @@
 .idea/
 out/
-out/production/Kotlin-Rudiment/
 *.iml
 *.xml
 *.name
 *.kotlin_module
-*.class
