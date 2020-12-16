@@ -3,6 +3,7 @@ fun main(){
 //    it works on vararg
     /*
     [vararg] - it tells that you can have n numbers of arguments inside any function.
+    the function on which arrayOf works take variable arguments and then it sets that vararg to the variable; using vararg it can take upto n variable/parameters even after declaring only one single parameter
      */
     val numbers = arrayOf(1,2,3,4,5)
     val name = arrayOf("1","2","3","4",5, 6.34) //we haven't given any type of array
@@ -128,9 +129,5 @@ fun main(){
         else->"invalid name"
     }
     print("\n $output")
-    /*
-    functions
-     */
-    
 }
 
