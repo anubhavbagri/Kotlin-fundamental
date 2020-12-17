@@ -1,19 +1,29 @@
 
 fun main(){
-    val acc = Account(12345,"Anubhav", 1000f)
+    val acc = Account(12345,"anubhav", 1000f)
+    println("Account number ${acc.accNo}, Account Holder : ${acc.name}, Amount ${acc.amount}")
+//    val acc = Account(12345,"Anubhav", 1000f)
 //    acc.insert(12345,"Anubhav", 1000f)
     acc.deposit(100f)
     acc.withDraw(150f) //gets rejected.
     acc.withDraw(50f)
     println(acc.amount)
-    println("Account number ${acc.accNo}, Account Holder : ${acc.name}, Amount ${acc.amount}")
+//    println("Account number ${acc.accNo}, Account Holder : ${acc.name}, Amount ${acc.amount}")
 }
 
-class Account(var accNo: Int,var name: String,var amount: Float)    //one way to write primary constructor
+class Account(accNo: Int,name: String,amount: Float) //primary constructor with the init block doesn't require var
 {
+    var accNo: Int
+    var name: String
+    var amount: Float
     init {
+        this.accNo = accNo
+        this.name = name.capitalize() //inbuilt function which converts first letter of the word to capital
+        this.amount = amount + 10000
 
     }
+//    class Account(var accNo: Int,var name: String,var amount: Float)    //one way to write primary constructor
+
 //    Properties or Attributes
 //    var accNo : Int = 0
 //    var name : String? = null
