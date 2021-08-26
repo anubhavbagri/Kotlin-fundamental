@@ -1,3 +1,8 @@
+# Kotlin
+- statically typed - the type will be known to us at compile time
+- interoperable with Java
+- Null Safe, concise and expressive
+
 ## Output your name and age
 
 > We have to print our name and age using Kotlin In-Built Function.
