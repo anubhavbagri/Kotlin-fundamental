@@ -52,7 +52,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-## Use the input for age taken by user and check if user is greater than 18 -> print valid
+## Use the input for age taken by user and check if user is greater than 18 : print valid
 > Given the input, use conditional statements to check the eligibility.
 
 ```kotlin
@@ -198,5 +198,55 @@ fun main(args: Array<String>) {
 }
 fun sum(a: Int, b: Int) : Int{
     return a+b
+}
+```
+
+## Function to check which one is older: If-else condition
+> Doing [this]() activity with the help of function
+
+```kotlin
+import java.util.*;
+/**
+ *This is the main function
+ */
+fun main(args: Array<String>) {
+ 	var read = Scanner(System.`in`)
+    
+    println("Enter first persons age")
+  	var age1 = read.nextInt()
+    
+    println("Enter second persons age")
+  	var age2 = read.nextInt()
+    
+    println("Older age: ${olderAge(age1,age2)}")   
+}
+
+fun olderAge(a: Int, b: Int) : Int {
+    if(a>b) return a else return b
+}
+```
+
+## To study classes and objects a little
+> Incomplete, to be added later
+
+```kotlin
+import java.util.*;
+/**
+ *This is the main function
+ */
+fun main(args: Array<String>) {
+ 	
+     
+}
+/*
+* Basic syntax of class
+*/
+
+//class name should start with capital letter in its name
+class Developer {
+
+    lateinit var name: String
+    lateinit var lang: String
+   
 }
 ```
