@@ -202,7 +202,7 @@ fun sum(a: Int, b: Int) : Int{
 ```
 
 ## Function to check which one is older: If-else condition
-> Doing [this]() activity with the help of function
+> Doing [this](https://github.com/anubhavbagri/Kotlin-fundamental/blob/master/src/README.md#take-inputs-for-two-users-and-store-the-details-of-the-elder-one) activity with the help of function
 
 ```kotlin
 import java.util.*;
