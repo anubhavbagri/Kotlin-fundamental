@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.094" />
 
     <EditText
-        android:id="@+id/PersonName"
+        android:id="@+id/personName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
@@ -41,11 +41,12 @@
         android:layout_marginTop="51dp"
         android:layout_marginEnd="68dp"
         android:backgroundTint="#00BCD4"
+        android:onClick="showName"
         android:padding="6dp"
         android:text="view"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/PersonName"
-        app:layout_constraintTop_toBottomOf="@+id/PersonName" />
+        app:layout_constraintEnd_toEndOf="@+id/personName"
+        app:layout_constraintTop_toBottomOf="@+id/personName" />
 
     <TextView
         android:id="@+id/showName"
@@ -53,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/PersonName"
+        app:layout_constraintStart_toStartOf="@+id/personName"
         app:layout_constraintTop_toBottomOf="@+id/viewName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
