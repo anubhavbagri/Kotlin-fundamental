@@ -135,6 +135,68 @@ fun main(args: Array<String>) {
 }
 ```
 
+## Create a list of your friend’s names and print the first two names
+> Make use of arrays here and try to understand the indexing of arrays to print the first two elements
 
+```kotlin
+import java.util.*;
+/**
+ *This is the main function
+ */
+fun main(args: Array<String>) {
 
+   //Creating an array of strings to store name of friends
+    var myFriends = arrayOf<String>("Khushi","Ali","Rahul","Isha")
+    
+    //Printing the name of 1st friend in array of myFriends using 'arrayName[index of element]'
+    println("Friend 1: ${myFriends[0]}")
+    println("Friend 2: ${myFriends[1]}")  
+}
+```
 
+## Print all the names in the list
+>Use a for loop in this case and make use of range method.
+
+```kotlin
+import java.util.*;
+/**
+ *This is the main function
+ */
+fun main(args: Array<String>) {
+   
+    //Creating an array of strings -> myFriend and adding some names
+    var myFriends = arrayOf("Khushi","Ali","Rahul","Isha")
+    
+    //Printing the name of all friends in myFriends using foreach loop
+    for(name in myFriends){
+        println(name)
+    }
+
+    //Printing the name and position of all friends in myFriends using foreach loop
+    for((index,name) in myFriends.withIndex()){
+        println("Friend ${index+1}: $name")
+    }
+}
+```
+
+## Function to add two numbers
+> Let's use the concept of Functions and arguments.
+
+```kotlin
+import java.util.*;
+/**
+ *This is the main function
+ */
+fun main(args: Array<String>) {
+ 	var read = Scanner(System.`in`)
+    
+    var num1 = read.nextInt()
+    var num2 = read.nextInt()
+    
+    var total = sum(num1,num2)
+    println("Sum of ${num1} and ${num2} is ${total}")   
+}
+fun sum(a: Int, b: Int) : Int{
+    return a+b
+}
+```
